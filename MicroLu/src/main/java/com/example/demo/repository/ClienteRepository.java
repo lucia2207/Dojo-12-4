@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Mono;
 
 @Repository
-public interface ClienteRepo extends ReactiveMongoRepository<Cliente, String> {
+public interface ClienteRepository extends ReactiveMongoRepository<Cliente, String> {
     Mono<Cliente> findByClienteId(String id);
 }

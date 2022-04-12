@@ -9,13 +9,16 @@ import java.util.UUID;
 @Document(collection = "clientes")
 public class Cliente {
     @Id
-    private String id = UUID.randomUUID().toString().substring(0, 10);
+    private String clienteId = UUID.randomUUID().toString().substring(0, 10);
+
     private String nombre;
     private String telefono;
     private String documentoId;
 
+    public Cliente() {}
+
     public Cliente(String clienteId, String nombreCliente, String telefono, String docId) {
-        this.id = clienteId;
+        this.clienteId = clienteId;
         this.nombre = nombreCliente;
         this.telefono = telefono;
         this.documentoId = docId;
@@ -27,7 +30,7 @@ public class Cliente {
         if (o == null || getClass() != o.getClass()) return false;
         Cliente cliente = (Cliente) o;
         return
-                Objects.equals(this.id, cliente.id) &&
+                Objects.equals(this.clienteId, cliente.clienteId) &&
                 Objects.equals(this.nombre, cliente.nombre) &&
                 Objects.equals(this.telefono, cliente.telefono) &&
                 Objects.equals(this.documentoId, cliente.documentoId);
@@ -35,11 +38,11 @@ public class Cliente {
 
     @Override
     public int hashCode() {
-        return Objects.hash(this.id, this.nombre, this.telefono, this.documentoId);
+        return Objects.hash(this.clienteId, this.nombre, this.telefono, this.documentoId);
     }
 
     public String getId() {
-        return this.id;
+        return this.clienteId;
     }
     public String getNombre() {
         return this.nombre;
@@ -52,7 +55,7 @@ public class Cliente {
     }
 
     public void setId(String clienteId) {
-        this.id = clienteId;
+        this.clienteId = clienteId;
     }
     public void setNombre(String nombreCliente) {
         this.nombre = nombreCliente;
@@ -67,7 +70,7 @@ public class Cliente {
     @Override
     public String toString() {
         return "Cliente{" +
-                "id='" + this.id + '\'' +
+                "id='" + this.clienteId + '\'' +
                 ", nombre='" + this.nombre + '\'' +
                 ", celular='" + this.telefono + '\'' +
                 ", documentoId='" + this.documentoId + '\'' +
