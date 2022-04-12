@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import com.java.microfacturar.config.MessagingConfig;
+import com.example.demo.config.MessagingConfig;
 
 @RestController
 @CrossOrigin(origins = "*")

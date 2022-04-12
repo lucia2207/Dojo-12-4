@@ -1,7 +1,8 @@
 package com.example.demo.consumer;
 
+import com.example.demo.config.MessagingConfig;
 import com.example.demo.model.Cliente;
-import com.java.microfacturar.config.MessagingConfig;
+
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
