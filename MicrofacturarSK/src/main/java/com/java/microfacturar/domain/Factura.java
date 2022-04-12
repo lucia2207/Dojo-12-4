@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDate;
 import java.util.UUID;
 
-@Document(collection = "facturadojo")
+@Document(collection = "facturas")
 public class Factura {
     @Id
     private String id = UUID.randomUUID().toString().substring(0, 10);
