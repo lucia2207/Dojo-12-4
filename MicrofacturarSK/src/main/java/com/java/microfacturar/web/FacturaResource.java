@@ -21,7 +21,7 @@ public class FacturaResource {
 
     @GetMapping("/facturasReactivas/factura/{id}")
     @ResponseStatus(HttpStatus.OK)
-    private Mono<Factura> obtenerFacturaPorId(String id){
+    private Mono<Factura> obtenerFacturaPorId(@PathVariable String id){
         return this.facturaService.findInvoiceById(id);
     }
 
