@@ -10,7 +10,7 @@ import java.util.UUID;
 public class Factura {
     @Id
     private String id = UUID.randomUUID().toString().substring(0, 10);
-    private LocalDate fecha;
+    private String fecha;
     private String nomCliente;
     private Double total;
     private Boolean aplicaDesc;
@@ -19,7 +19,7 @@ public class Factura {
 
     //Constructor
     public Factura() {
-        this.fecha = LocalDate.now();
+        this.fecha = LocalDate.now().toString();
         this.aplicaDesc = false;
     }
 
@@ -32,11 +32,11 @@ public class Factura {
         this.id = id;
     }
 
-    public LocalDate getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
