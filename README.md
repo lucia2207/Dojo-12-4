@@ -185,9 +185,9 @@ Respuesta (de referencia)
 - Tener en cuenta las credenciales y en el aplication properties establecer el puerto a utilizar. Este a su vez debe ser el mismo en el que se debe levantar el contenedor
  
 # Enlaces de interés
-- [Running rabbitmq with docker.host.internal] https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach#:~:text=Use%20%2D%2Dnetwork%3D%22host%22,point%20to%20your%20docker%20host.
-- [Dockerize with maven] https://www.educative.io/edpresso/how-do-you-dockerize-a-maven-project
-- [RabbitMQ and Spring integration] https://www.sdos.es/blog/microservicios-mensajes-spring-rabbitmq
-- [no-main-manifest-attribute error] https://ao.ms/spring-boot-no-main-manifest-attribute-in/
+- [Running rabbitmq with docker.host.internal] (https://stackoverflow.com/questions/24319662/from-inside-of-a-docker-container-how-do-i-connect-to-the-localhost-of-the-mach#:~:text=Use%20%2D%2Dnetwork%3D%22host%22,point%20to%20your%20docker%20host.)
+- [Dockerize with maven] (https://www.educative.io/edpresso/how-do-you-dockerize-a-maven-project)
+- [RabbitMQ and Spring integration] (https://www.sdos.es/blog/microservicios-mensajes-spring-rabbitmq)
+- [no-main-manifest-attribute error] (https://ao.ms/spring-boot-no-main-manifest-attribute-in/)
 
 
